@@ -9,7 +9,7 @@ from bs4 import BeautifulSoup
 def generatePageUrl(subTitle,pageNum):
 	pageUrlList = []
 	for i in range(1,pageNum+1):
-		pageUrlList.append('http://www.allitebooks.com/'+subTitle+'/page/'+str(i))
+		pageUrlList.append('http://www.allitebooks.com'+subTitle+'/page/'+str(i))
 	return pageUrlList
 
 
@@ -45,8 +45,8 @@ def getPdfUrl(bookUrl):
 	
 if __name__ == '__main__':
 	
-	pageNum = 61
-	subTitle = 'networking-cloud-computing'
+	pageNum = 2
+	subTitle = ''
 
 	bookUrlList = []
 	pageUrlList = generatePageUrl(subTitle,pageNum)
