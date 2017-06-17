@@ -3,7 +3,7 @@ a python crawler to scrap books' downloading urls from allitebooks.com
 
 ## requirements
 I use BeautifulSoup library to parse html, so you need to install it.
-If you have installed, congratulations! If you have not, this [page](https://beautifulsoup.readthedocs.io/zh_CN/v4.4.0/#id8)will help.
+If you have installed, congratulations! If you have not, this [page](https://beautifulsoup.readthedocs.io/zh_CN/v4.4.0/#id8) will help.
 
 
 ## How to use it?
@@ -25,21 +25,16 @@ If you have installed, congratulations! If you have not, this [page](https://bea
    wait for a moment, and if everything is right, you will get 20 downling urls.
    
 3. If you want to download more, you can edit the getUrl.py. 
-   '''python
-   	 pageNum = 2
-	 subTitle = ''
-   
-   '''
+   ```
+  pageNum = 2
+ subTitle = " "
+   ```
    change the 'pageNum' for the numble you want to download. You can also change the subTitle, 
    for just downloading one specific sub theme. For example, you just wanna download the Hardware&DIY category,
    click the Hardware&DIY, you can get the subTitle from the url:http://www.allitebooks.com/hardware/
    modify
-   
- 
    ```python
    subTitle = 'hardware'
-   
-   ```
-   
- 4. enjoy it! Feel free to modified this script. hope you will share what you modified.
- and thanks to allitebooks.com. If you download too much e-books from this site, think about supporting this site.
+   ```   
+
+4. enjoy it! Feel free to modified this script. hope you will share what you modified.and thanks to allitebooks.com. If you download too much e-books from this site, think about supporting this site.
