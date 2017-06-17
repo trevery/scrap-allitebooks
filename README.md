@@ -25,10 +25,12 @@ If you have installed, congratulations! If you have not, this [page](https://bea
    wait for a moment, and if everything is right, you will get 20 downling urls.
    
 3. If you want to download more, you can edit the getUrl.py. 
+
    ```
   pageNum = 2
- subTitle = " "
+  subTitle = " "
    ```
+   
    change the 'pageNum' for the numble you want to download. You can also change the subTitle, 
    for just downloading one specific sub theme. For example, you just wanna download the Hardware&DIY category,
    click the Hardware&DIY, you can get the subTitle from the url:http://www.allitebooks.com/hardware/
