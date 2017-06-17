@@ -36,10 +36,7 @@ If you have installed, congratulations! If you have not, this [page](https://bea
    for just downloading one specific sub theme. For example, you just wanna download the Hardware&DIY category,
    click the Hardware&DIY, you can get the subTitle from the url:http://www.allitebooks.com/hardware/ .
    
-   Modify
+   Modify:
+   `subTitle = "hardware"`
    
-   ```
-   subTitle = "hardware"
-   ```
-   
-4. Enjoy it! Feel free to modified this script. hope you will share what you modified.and thanks to allitebooks.com. If you download too      much e-books from this site, think about supporting this site.
+4. Enjoy it! Feel free to modify this script. hope you will share what you modified.and thanks to allitebooks.com. If you download too      much e-books from this site, think about supporting this site.
