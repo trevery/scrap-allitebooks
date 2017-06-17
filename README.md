@@ -13,7 +13,7 @@ If you have installed, congratulations! If you have not, this [page](https://bea
 1. download the repo
     - you can download use the 'clone and download' button on the top right of this page.
     - you can also use git, if you like it. For example, if you are also using your pi, whitch has installed `git`, do as follows:
-    ```
+    ```bash
     cd ~
     git clone https://github.com/trevery/scrap-allitebooks.git
     cd ~/scrap-allitebooks/
@@ -25,8 +25,8 @@ If you have installed, congratulations! If you have not, this [page](https://bea
    wait for a moment, and if everything is right, you will get 20 downling urls.
    
 3. If you want to download more, you can edit the getUrl.py. 
-   '''
-   pageNum = 2
+   '''python
+   	 pageNum = 2
 	 subTitle = ''
    
    '''
@@ -34,8 +34,12 @@ If you have installed, congratulations! If you have not, this [page](https://bea
    for just downloading one specific sub theme. For example, you just wanna download the Hardware&DIY category,
    click the Hardware&DIY, you can get the subTitle from the url:http://www.allitebooks.com/hardware/
    modify
-   ```
+   
+ 
+   ```python
    subTitle = 'hardware'
+   
    ```
+   
  4. enjoy it! Feel free to modified this script. hope you will share what you modified.
  and thanks to allitebooks.com. If you download too much e-books from this site, think about supporting this site.
