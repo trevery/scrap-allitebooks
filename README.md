@@ -1,10 +1,28 @@
 # scrap-allitebooks
-a python crawler to scrap books' downloading urls from allitebooks.com
+
+a python crawler to scrap books' downloading urls from www.allitebooks.com
 
 ## requirements
+
+- python3
+- beautifulsoup4
+
 I use BeautifulSoup library to parse html, so you need to install it.
 If you have installed, congratulations! If you have not, this [page](https://beautifulsoup.readthedocs.io/zh_CN/v4.4.0/#id8) will help.
 
+Here is a simple guide for installing BeautifulSoup.
+
+- use pip
+
+	$ pip install beautifulsoup4
+
+- use apt-get 
+	
+	$ sudo apt-get install python3-bs4
+
+- use conda or anaconda
+
+	$ conda install beautifulsoup4
 
 ## How to use it?
 
