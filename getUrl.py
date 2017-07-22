@@ -19,7 +19,7 @@ def getBookUrlInThisPage(url):
 	except HTTPError as e:
 		return None
 	try:
-		bsObj = BeautifulSoup(html)
+		bsObj = BeautifulSoup(html,'html.parser')
 		linkList = bsObj.find('main').findAll('a',{'rel':'bookmark'})
 	except AttributeError as e:
 		return None
