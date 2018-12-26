@@ -46,21 +46,26 @@ def get_book_sites_of_one_page(page):
 	return bookSites
 
 
-def get_book_url(bookSite):
+def get_book_urls(bookSite):
 	'''
 	input a book site
 	find book downloading urls in this book site
 	then
-	return it
+	return them as a list
 	'''
+	bookURLs=[]
 	html = urlopen(bookSite)
 	soup = BeautifulSoup(html,'lxml')
-	bookUrl = soup.find("a",{"target":"_blank"}).attrs['href']
-	return bookUrl    
+	linkList = soup.findAll("a",{"target":"_blank"})
+	for link in linkList:
+		if 'href' in link.attrs:
+			bookURLs.append(link.attrs['href'])
+	return bookURLs    
 
 
 def get_all_book_urls(pageNum=1,subTitle=''):
 	bookSites = []
+	bookURLs = []
 	pages = generate_pages(subTitle,pageNum)
 	
 	for page in pages:
@@ -68,8 +73,10 @@ def get_all_book_urls(pageNum=1,subTitle=''):
 		bookSites.extend(bookSiteOfOnePage)
 	
 	for bookSite in bookSites:
-		bookUrl = get_book_url(bookSite)
-		print(bookUrl)
+		book_urls=get_book_urls(bookSite)
+		bookURLs += book_urls
+	for bookURL in bookURLs:
+		print(bookURL)
 		
 		
 def main():
